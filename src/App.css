@@ -34,7 +34,8 @@
 }
 
 .app__messages{
-  margin-bottom: 90px;
   flex: 1;
   overflow-y: auto;
+  width: 100%;
+  margin: 0 auto 90px;
 }
