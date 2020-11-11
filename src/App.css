@@ -6,6 +6,15 @@
 
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.app__image{
+  padding-top: 2rem;
+}
+.app__image img{
+  width: 100px;
 }
 
 .app__form{
@@ -17,8 +26,15 @@
   bottom: 0;
   z-index: 1;
   width: 100%;
+  height: 90px;
 }
 
 .app__input{
   flex: 1;
+}
+
+.app__messages{
+  margin-bottom: 90px;
+  flex: 1;
+  overflow-y: auto;
 }
