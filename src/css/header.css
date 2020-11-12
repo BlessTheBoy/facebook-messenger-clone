@@ -1,0 +1,37 @@
+.header {
+  background: #0084FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.header .pointers {
+  cursor: pointer;
+}
+
+.header_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_wrap_title {
+  margin-right: .5rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/*# sourceMappingURL=header.css.map */

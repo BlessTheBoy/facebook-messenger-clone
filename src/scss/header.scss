@@ -1,0 +1,24 @@
+.header{
+    background: #0084FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    .pointers{
+        cursor: pointer;
+    }
+
+    &_wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_title{
+            margin-right: .5rem;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+}

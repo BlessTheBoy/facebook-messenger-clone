@@ -1,0 +1,30 @@
+.active-users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.active-users__icon {
+  font-family: 'Bebas Neue', cursive;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin-right: 5px;
+  color: white;
+  font-weight: 500;
+}
+/*# sourceMappingURL=headActiveUsers.css.map */

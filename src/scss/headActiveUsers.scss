@@ -1,0 +1,19 @@
+.active-users{
+    display: flex;
+    margin: auto .5rem;
+    align-items: center;
+
+    &__icon{
+        font-family: 'Bebas Neue', cursive;
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-right: 5px;
+        color: white;
+        font-weight: 500;
+    }
+}
