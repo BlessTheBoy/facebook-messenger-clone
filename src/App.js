@@ -5,6 +5,7 @@ import MessageInput from './MessageInput';
 
 function App() {
   const [user, setUser] = useState("")
+  console.log("app rerendered")
 
   useEffect(() => {
     setUser(prompt("Please enter your name"))

@@ -2,9 +2,8 @@ import React, { useEffect } from 'react'
 import FlipMove from 'react-flip-move';
 import Message from './Message';
 
-function Messages({messages, user}) {
+function Messages({messages, user}) {    
     let prevUser = user
-
     useEffect(() => {
         var element = document.querySelector(".app__messages")
         element.scrollTop = element.scrollHeight - element.clientHeight

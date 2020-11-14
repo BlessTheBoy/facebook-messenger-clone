@@ -3,12 +3,11 @@ import Hambuger from './Hambuger'
 import HeadActiveUsers from './HeadActiveUsers'
 import Options from './Options'
 import './css/header.css'
-import { Title } from '@material-ui/icons'
+import Title from './Title'
 
 function Header({messages, user}) {    
 //   const [users, setUsers] = useState([])
   const [usernames, setUsernames] = useState([])
-
   useEffect(() => {
     // let tempUsers = []
     let tempUsernames = []
@@ -42,6 +41,7 @@ function Header({messages, user}) {
             <Hambuger />
             <div className="header_wrap">
                 <Title />
+                {/* <h1 className="header_wrap_title" >Chat App</h1> */}
                 <HeadActiveUsers users = {usernames}/>
             </div>
             <Options />

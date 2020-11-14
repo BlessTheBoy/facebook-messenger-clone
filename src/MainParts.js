@@ -5,11 +5,12 @@ import Messages from './Messages'
 
 function MainParts({user}) {
     const [messages, setMessages] = useState([])
-
+    console.log("main parts rerendered")
     useEffect(() => {
-        db.collection('messaged').orderBy('timestamp', 'asc').onSnapshot(snapshot => {
+        const listen = db.collection('messaged').orderBy('timestamp', 'asc').onSnapshot(snapshot => {
           setMessages(snapshot.docs.map(doc => ({id: doc.id, data: doc.data()})))
         })
+        return listen
     }, [])
     
     return (
@@ -20,4 +21,4 @@ function MainParts({user}) {
     )
 }
 
-export default MainParts
+export default React.memo(MainParts)
