@@ -1,17 +1,18 @@
 import React from 'react'
 import FlipMove from 'react-flip-move';
 import './css/headActiveUsers.css'
+import UserIcon from './UserIcon';
 
 function HeadActiveUsers({users}) {
     return (
         <FlipMove className="active-users">
             {
-                users.map( user => {
-                 return <div className="active-users__icon" style={{backgroundColor: user.data.userColor }} key={user.id}>{user.data.username[0]}</div>
+                users.map( user => {                
+                 return <UserIcon key={user} username={user} />
                 })
             }
         </FlipMove>
     )
 }
 
-export default HeadActiveUsers
+export default React.memo(HeadActiveUsers)

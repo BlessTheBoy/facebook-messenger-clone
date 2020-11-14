@@ -12,4 +12,4 @@ function Hambuger() {
     )
 }
 
-export default Hambuger
+export default React.memo(Hambuger)

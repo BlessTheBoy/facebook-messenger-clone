@@ -2,8 +2,8 @@ import React from 'react'
 
 function Title() {
     return (
-        <h1>Chat App</h1>
+        <h1 className="header_wrap_title" >Chat App</h1>
     )
 }
 
-export default Title
+export default React.memo(Title)
