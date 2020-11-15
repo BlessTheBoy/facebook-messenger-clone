@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography } from '@material-ui/core'
 import React, { forwardRef } from 'react'
-import './Message.css'
+import './css/message.css'
 import UserIcon from './UserIcon'
 
 const Message = forwardRef (({user, message, prevUsername}, ref) => {
@@ -18,7 +18,7 @@ const Message = forwardRef (({user, message, prevUsername}, ref) => {
         let day = d1.getDate();
         let month = d1.toLocaleString("default", { month: "short" })
         let year = d1.getFullYear()
-        const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
         let weekDay = weekDays[d1.getDay()]
         if (year2 > year) {     
             date = month + " " + day + ", " + year 
@@ -57,8 +57,8 @@ const Message = forwardRef (({user, message, prevUsername}, ref) => {
             {showIcon && <UserIcon username={message.username} />}
             <Card className={isUser ? 'message__userCard' : "message_guestCard"}>
                 <CardContent>
-                    <Typography variant="h5" component="h2">
-                        {!isUser && `${message.username || "Unknown User"}: `} {message.text}
+                    <Typography variant="h5" component="p">
+                        {message.text}
                     </Typography>
                 </CardContent>
             </Card>

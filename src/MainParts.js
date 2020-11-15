@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import db from './firebase'
 import Header from './Header'
 import Messages from './Messages'
+import './css/mainparts.css'
 
 function MainParts({user}) {
     const [messages, setMessages] = useState([])
@@ -14,7 +15,7 @@ function MainParts({user}) {
     }, [])
     
     return (
-        <div>
+        <div className="mainpart">
             <Header user={user} messages={messages} />
             <Messages user={user} messages={messages} />
         </div>

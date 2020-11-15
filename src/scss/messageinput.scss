@@ -1,0 +1,13 @@
+.app__form{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #e9e9eb !important;
+    z-index: 1;
+    width: 100%;
+    height: 90px;
+  }
+  
+  .app__input{
+    flex: 1;
+  }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACN,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,gBAAgB,EAAE,kBAAkB;EACpC,OAAO,EAAE,CAAC;EACV,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,WAAW,CAAA;EACT,IAAI,EAAE,CAAC;CACR",
+    "sources": [
+        "../scss/messageinput.scss"
+    ],
+    "names": [],
+    "file": "messageinput.css"
+}

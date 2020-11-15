@@ -1,0 +1,38 @@
+.message{
+    padding: 2px;
+    margin: 10px;
+    width: fit-content;
+    max-width: 70%;
+    font-size: .5rem !important;
+    border-radius: 1rem !important;
+    overflow: hidden;
+}
+
+.MuiTypography-h5 {
+    font-size: .75rem !important;
+    line-height: .8rem !important;
+    letter-spacing: 0em;
+}
+
+// .MuiCardContent-root:last-child {
+//     padding-bottom: 0 !important;
+// }
+
+.MuiCardContent-root {
+    padding: 10px !important;
+}
+
+.message__user{
+    margin-left: auto;
+    text-align: left !important;
+    color: white;
+}
+
+.message__userCard{
+    background-color: #0b81ff !important;
+    // color: white !important;
+}
+
+.message__guestCard{
+    background-color: #e9e9eb !important;
+}

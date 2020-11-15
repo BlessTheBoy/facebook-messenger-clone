@@ -13,8 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      <MainParts user={user} />
-      <MessageInput user={user} />
+      <div className="container">
+        <MainParts user={user} />
+        <MessageInput user={user} />
+      </div>      
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import FlipMove from 'react-flip-move';
 import Message from './Message';
+import './css/messages.css'
 
 function Messages({messages, user}) {    
     let prevUser = user

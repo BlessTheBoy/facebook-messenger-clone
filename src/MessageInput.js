@@ -3,6 +3,7 @@ import db from './firebase'
 import firebase from 'firebase'
 import { FormControl, IconButton, Input } from '@material-ui/core'
 import SendIcon from '@material-ui/icons/Send'
+import './css/messageinput.css'
 
 function MessageInput({user}) {    
   const [input, setInput] = useState("")
