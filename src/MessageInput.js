@@ -20,13 +20,18 @@ function MessageInput({user}) {
       }
       
     return (
-        <form className="app__form"> 
-            <FormControl className="app__input">
-                <Input placeholder="Enter a message..." type="text" value={input} onChange={ e => setInput(e.target.value)} />
+        <form className="app__form">
+          <input className="input" placeholder="Enter a message..." type="text" value={input} onChange={ e => setInput(e.target.value)} />
+          <button className="send" disabled={!input} type="submit" onClick={sendMessage}>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          {/* <IconButton className="send" disabled={!input} variant="contained" color="primary" type="submit" onClick={sendMessage} >
+              <SendIcon />
+          </IconButton> */}
+            {/* <FormControl >
+                <Input />
             </FormControl>
-            <IconButton disabled={!input} variant="contained" color="primary" type="submit" onClick={sendMessage}>
-                <SendIcon />
-            </IconButton>
+             */}
         </form>
     )
 }

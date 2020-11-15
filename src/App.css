@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #E5E5E5;
 }
 .container{
   height: 100%;
@@ -18,4 +19,14 @@
   flex-direction: column;
   width: 100%;
   max-width: 400px;
+  background-color: white;
+}
+
+@media only screen and (min-width: 400px) {
+  .App {
+    padding: 1rem;
+  }
+  .container{
+    height: 100%;
+  }
 }

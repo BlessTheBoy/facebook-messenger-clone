@@ -8,7 +8,8 @@ function App() {
   console.log("app rerendered")
 
   useEffect(() => {
-    setUser(prompt("Please enter your name"))
+    let name = prompt("Please enter your name")
+    setUser( name ? name : "unknown user")
   }, [])
 
   return (
