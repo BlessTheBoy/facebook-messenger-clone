@@ -53,18 +53,14 @@ const Message = forwardRef (({user, message, prevUsername}, ref) => {
         return date + " " + time 
     }
     return (
-        <div ref={ref} className={`message ${isUser && 'message__user'}`}>
-            {showIcon && <UserIcon username={message.username} />}
-            <Card className={isUser ? 'message__userCard' : "message_guestCard"}>
-                <CardContent>
-                    <Typography variant="h5" component="p">
-                        {message.text}
-                    </Typography>
-                </CardContent>
-            </Card>
-            <div>
-                {!isUser && <span >{message.username}</span>}
-                {message.timestamp && <span style={{color: 'black'}}>{compareDates(new Date(message.timestamp.toDate()))}</span>}
+        <div ref={ref} className={`message ${(!isUser) ? 'message__guest' : 'message__user'} ${!showIcon && 'not-first'}`}>
+            {showIcon && <div className="usericon"><UserIcon username={message.username} /></div>}
+            <div className={isUser ? 'message__userCard' : "message__guestCard"}>
+                {message.text}
+            </div>
+            <div className={`message__details ${isUser && 'user-details'}`}>
+                {!isUser && <span className="username">{message.username}</span>}
+                {message.timestamp && <span className="time" style={{color: 'black'}}>{compareDates(new Date(message.timestamp.toDate()))}</span>}
             </div>            
         </div>
     )

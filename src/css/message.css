@@ -1,23 +1,48 @@
 .message {
-  padding: 2px;
-  margin: 10px;
+  margin-top: 1rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: 5%;
   max-width: 70%;
-  font-size: .5rem !important;
-  border-radius: 1rem !important;
+  font-size: .75rem !important;
   overflow: hidden;
 }
 
-.MuiTypography-h5 {
-  font-size: .75rem !important;
-  line-height: .8rem !important;
-  letter-spacing: 0em;
+.message__details {
+  font-size: .45rem;
+  text-align: left;
+  padding-left: .5rem;
+  z-index: 0;
 }
 
-.MuiCardContent-root {
-  padding: 10px !important;
+.message__details .username {
+  margin-right: .8rem;
+  opacity: .8;
+  font-size: .45rem;
+}
+
+.message__details .time {
+  opacity: .5;
+}
+
+.message .usericon {
+  margin-bottom: -.5rem;
+  margin-left: -1.1rem;
+}
+
+.message__guest {
+  padding-left: 1.2rem;
+}
+
+.message__userCard, .message__guestCard {
+  border-radius: 17px;
+  padding: 10px 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 100px;
+  z-index: 2;
 }
 
 .message__user {
@@ -28,9 +53,22 @@
 
 .message__userCard {
   background-color: #0b81ff !important;
+  border-top-right-radius: 0;
+  text-align: right;
 }
 
 .message__guestCard {
   background-color: #e9e9eb !important;
+  border-top-left-radius: 0;
+  text-align: left;
+}
+
+.user-details {
+  text-align: right;
+  padding-right: .5rem;
+}
+
+.not-first {
+  margin-top: 0;
 }
 /*# sourceMappingURL=message.css.map */
